@@ -27,6 +27,8 @@ Tasks to answer in your own README.md that you submit on Canvas:
 7. Timer.timeMe()'s NullPointerException is the cause of the failure since TimeNow is null. The Timer class should be modified to so that timeNow is assigned to an actual TimeNow object.
 8. The issue is that when the timeNow variable is used in the finally block, it is not initialized correctly in every code path. 
 Exception Sequence: A TimerException stating that the timeToWait cannot be less than zero is thrown when it is negative. When the finally block is ran, it raises a NullPointerException since the timeNow is never properly supplied a value. The UnitTest delivers a NullPointerException instead of the TimerException it expects, which causes the test to fail.
+9. ![JUnit test](image.png)
+10. ![maven test](image-1.png)
 11. TimerException is a checked exception because it extends the exception class. On the otherhand, the NullPointerException is an uncheck exception because it extends the RunTimeException class causing it to not enforce handling of this exception.
 12. https://github.com/Lucas-CSI/Lab11-exceptionrunner
 
